@@ -1,0 +1,57 @@
+.list-view {
+    -fx-font: bold 14pt "Comic Sans MS";
+    -fx-background-color: transparent;
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: lightgray;
+            /*linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);*/
+    -fx-text-fill: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*.list-view {
+    -fx-font: bold 11pt "Comic Sans MS";
+    -fx-background-color: transparent;
+}
+
+!*.list-view:focused {*!
+
+    !*!*-fx-opacity: 0.1;*!*!
+    !*!*-fx-background-radius: 0;*!*!
+    !*!*-fx-background-insets: 0;*!*!
+    !*!*-fx-background-color: yellow;*!*!
+    !*!*-fx-background-radius: 0;*!*!
+    !*!*-fx-background-insets: 0;*!*!
+    !*!*-fx-padding: 0;*!*!
+!*}*!
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: yellowgreen;
+    !*-fx-background-color: #0093ff;*!
+
+    !*-fx-padding: 10 10 10 10;*!
+}*/
+
+/*.list-cell:odd {
+    -fx-background-color: null;
+}*/
+
+/*.list-cell:filled:selected .label {
+    -fx-text-fill: black ;
+}*/

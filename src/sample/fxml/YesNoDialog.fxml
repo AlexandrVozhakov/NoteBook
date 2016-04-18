@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="100.0" prefWidth="400.0">
+         <center>
+            <Label fx:id="question" text="Label" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <HBox prefHeight="100.0" prefWidth="400.0">
+         <children>
+            <Button fx:id="okBtn" defaultButton="true" mnemonicParsing="false" text="Ok">
+               <HBox.margin>
+                  <Insets left="50.0" top="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="cancelBtn" cancelButton="true" mnemonicParsing="false" text="Cancel">
+               <HBox.margin>
+                  <Insets left="150.0" right="50.0" top="25.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

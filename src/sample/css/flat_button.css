@@ -1,0 +1,16 @@
+
+.button {
+    -fx-background-color: white;
+    -fx-border-color: darkgray;
+    -fx-border-radius: 3%;
+    /*-fx-background-insets: 0 0 -1 0,0,1;*/
+    /*-fx-background-radius: 5,5,4;*/
+    /*-fx-padding-color: 7 30 7 30;*/
+    -fx-font-weight: bold;
+    -fx-text-fill: dimgrey;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 10, 0.5, 0.0, 0.0);
+    /*-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.2), 1, 0, 0, 1 );*/
+    /*-fx-font-family: "Helvetica";*/
+    /*-fx-font-size: 12px;*/
+}
+

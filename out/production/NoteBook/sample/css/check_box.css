@@ -1,0 +1,21 @@
+.check-box>.box {
+    -fx-background-insets: 2;
+    -fx-background-radius: 10;
+    -fx-background-color: azure;
+}
+
+.check-box>.box>.mark {
+    /*-fx-background-image: url("../icons/settings.png");*/
+    -fx-background-position: center;
+    -fx-background-repeat: stretch;
+    -fx-shape: none;
+}
+
+.check-box:selected>.box>.mark{
+    -fx-background-color: lightgray;
+    -fx-background-radius: 6;
+    /*-fx-background-image: url("../icons/pin.png");*/
+}
+
+
+

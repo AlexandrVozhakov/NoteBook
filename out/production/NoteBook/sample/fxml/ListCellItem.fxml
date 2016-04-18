@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import sample.objects.NoteHeader?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <CheckBox fx:id="inUp" mnemonicParsing="false">
+         <HBox.margin>
+            <Insets bottom="5.0" left="5.0" top="7.0" />
+         </HBox.margin>
+      </CheckBox>
+      <VBox prefHeight="50.0" prefWidth="336.0">
+         <children>
+            <Label fx:id="headerLbl" text="Label">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="dateModLbl" text="Label">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</HBox>

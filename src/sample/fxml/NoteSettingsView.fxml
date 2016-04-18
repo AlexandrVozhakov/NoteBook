@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.NoteSettingsController">
+   <children>
+      <Label fx:id="wordCountLbl" layoutX="14.0" layoutY="18.0" text="Label" />
+      <Label fx:id="charCountLbl" layoutX="14.0" layoutY="51.0" text="Label" />
+      <Button layoutX="224.0" layoutY="361.0" mnemonicParsing="false" onAction="#actionClose" text="Close" />
+      <Button layoutX="150.0" layoutY="361.0" mnemonicParsing="false" onAction="#actionSave" text="Save" />
+      <Label fx:id="dateCreateLbl" layoutX="14.0" layoutY="85.0" text="Label" />
+      <Label fx:id="dateModLbl" layoutX="14.0" layoutY="119.0" text="Label" />
+      <MenuButton fx:id="fontChangeBtn" layoutX="14.0" layoutY="175.0" mnemonicParsing="false" text="font style">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </MenuButton>
+      <MenuButton fx:id="fontSizeBtn" layoutX="142.0" layoutY="175.0" mnemonicParsing="false" text="size">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </MenuButton>
+   </children>
+</Pane>

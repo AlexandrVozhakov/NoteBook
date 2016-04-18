@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="291.0" prefWidth="290.0" stylesheets="@../css/round_window.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.EditBookController">
+   <children>
+      <HBox prefHeight="30.0" prefWidth="300.0">
+         <children>
+            <Button fx:id="delBookBtn" mnemonicParsing="false" onAction="#deleteBook">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="260.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <stylesheets>
+                  <URL value="@../css/trash_btn.css" />
+               </stylesheets>
+            </Button>
+         </children>
+      </HBox>
+      <TextField fx:id="bookNameFld">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </TextField>
+      <Label fx:id="bookSizeLbl" text="Label">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <Label fx:id="dateCreateLbl" text="Label">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <Label fx:id="dateModifyLbl" text="Label">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#actionSave" prefWidth="100.0" stylesheets="@../css/flat_button.css" text="Ok">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button cancelButton="true" mnemonicParsing="false" onAction="#actionClose" prefWidth="100.0" stylesheets="@../css/flat_button.css" text="Cancel">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

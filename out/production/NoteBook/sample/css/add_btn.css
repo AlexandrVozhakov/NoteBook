@@ -1,0 +1,8 @@
+.button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    /*-fx-background-image: url("../icons/add_book_btn.png");*/
+    -fx-background-image: url("../icons/add_note.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}

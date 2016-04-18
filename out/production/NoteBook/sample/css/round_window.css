@@ -1,0 +1,9 @@
+
+.root {
+    -fx-opacity:0.95;
+    -fx-background-color:white;
+    -fx-background-radius:20;
+    /*-fx-border-radius: 20;*/
+    /*-fx-border-width: 1;*/
+    /*-fx-border-color: lightgray;*/
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JavaFXApp.jnlp">
+  <information>
+    <title>Notes</title>
+    <vendor>Unknown</vendor>
+    <description>Notes</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="JavaFXApp.jar" size="85419" download="eager" />
+    <jar href="sample/libs/controlsfx-8.40.10.jar" size="954085" download="eager" />
+    <jar href="sample/libs/dropbox-core-sdk-1.7.7.jar" size="202382" download="eager" />
+    <jar href="sample/libs/jackson-core-2.4.0-rc3.jar" size="223906" download="eager" />
+    <jar href="sample/libs/sqlite-jdbc-3.7.2.jar" size="3201133" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="sample.Main"  name="Notes" />
+  <update check="background"/>
+</jnlp>
