@@ -9,6 +9,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import org.controlsfx.control.PopOver;
 import sample.interfaces.NoteBook;
@@ -38,7 +39,9 @@ public class EditBookController {
 
 
     NoteBook noteBook;
+    ListView<Book> bookList;
     Book book;
+
 
     public EditBookController(){
         noteBook = CollectionNoteBook.getInstance();
@@ -49,6 +52,7 @@ public class EditBookController {
 
         Node source = (Node) actionEvent.getSource();
         PopOver popOver = (PopOver) source.getScene().getWindow();
+        bookList.refresh();
         popOver.hide();
     }
 
@@ -71,11 +75,12 @@ public class EditBookController {
     }
 
 
-    public void setInfo(Book book){
+    public void setInfo(ListView<Book> bookList){
 
-        this.book = book;
+        this.bookList = bookList;
+        book = bookList.getSelectionModel().getSelectedItem();
 
-        if (book.getId() == 1)
+        if (this.book.getId() == 1)
             delBookBtn.setOpacity(0);
         else
             delBookBtn.setOpacity(1.0);

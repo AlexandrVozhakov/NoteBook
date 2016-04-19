@@ -62,20 +62,11 @@ public class NoteBookController {
 
     private void initListeners() {
 
-//        searchTextField.focusedProperty().addListener((observable, oldValue, newValue) -> {
-//
-//            if (searchTextField.isFocused()){
-//                //searchTextField.setText("");
-//            } else {
-//                //searchTextField.setText("Search");
-//            }
-//        });
 
         bookListView.setOnMouseClicked(event -> {
 
             if (event.getButton() == MouseButton.SECONDARY || event.getClickCount() == 2){
                 showEditBookMenu(event);
-                bookListView.refresh();
             }
         });
 
@@ -88,10 +79,6 @@ public class NoteBookController {
         noteListView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             setNoteTextArea();
         });
-
-//        noteListView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
-//            System.out.println("selection changed");
-//        });
 
         noteTextArea.textProperty().addListener((observableValue, s1, s2) -> {
 
@@ -132,7 +119,7 @@ public class NoteBookController {
         FXMLLoader fxmlLoader = new FXMLLoader();
         Parent fxmlMain = load(fxmlLoader, "../fxml/EditBookView.fxml");
         EditBookController bookController = fxmlLoader.getController();
-        bookController.setInfo(getSelectedBook());
+        bookController.setInfo(bookListView);
 
         PopOver popOver = new PopOver();
         popOver.setContentNode(fxmlMain);
@@ -177,7 +164,7 @@ public class NoteBookController {
         if (note == null)
             note = new Note(); // для установки пустого текста если удаляется последняя заметка
 
-        userChangeText = false;
+        userChangeText = false; // блокируем слушателя textarea
         noteTextArea.setText(note.getText());
         dateNoteLabel.setText(note.getCreateDate());
         userChangeText = true;

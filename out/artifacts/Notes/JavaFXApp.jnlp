@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="JavaFXApp.jar" size="85419" download="eager" />
+    <jar href="JavaFXApp.jar" size="45044" download="eager" />
     <jar href="sample/libs/controlsfx-8.40.10.jar" size="954085" download="eager" />
     <jar href="sample/libs/dropbox-core-sdk-1.7.7.jar" size="202382" download="eager" />
     <jar href="sample/libs/jackson-core-2.4.0-rc3.jar" size="223906" download="eager" />
